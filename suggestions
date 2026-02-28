@@ -1,0 +1,7 @@
+Suggestions:
+ * list clusters with: kops get cluster
+ * edit this cluster with: kops edit cluster aunnathya.k8s.local
+ * edit your node instance group: kops edit ig --name=aunnathya.k8s.local nodes-us-east-1a
+ * edit your control-plane instance group: kops edit ig --name=aunnathya.k8s.local control-plane-us-east-1a
+
+Finally configure your cluster with: kops update cluster --name aunnathya.k8s.local --yes --admin
